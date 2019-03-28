@@ -1,5 +1,6 @@
 import java.util.*;
-import java.lang.Math;
+//import java.lang.Math;
+import java.util.Random;
 /*
 TicTac Game
 __X_|__O_|__X_
@@ -39,12 +40,14 @@ class Game{
     y = Player2;
   }
   public void Toss(){
-    //Random rand= new Random();
-    int rand1= (int)Math.random();
+    Random rand= new Random();
+    int max=1,min=0;
+    int rand1 = rand.nextInt((max - min) + 1) + min;
+    //int rand1= (int)Math.random();
     Scanner input= new Scanner(System.in);
     System.out.println(x + " " +"Choose either Heads or Tails");
     String answer = input.nextLine();
-    System.out.println(rand1);
+    //System.out.println(rand1);
     if (rand1==0 && answer.equals("Heads")) {
       System.out.println(x + " " + "Won the toss");
     }
