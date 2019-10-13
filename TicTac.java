@@ -5,11 +5,11 @@ package TicTac;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-/**
- *
- * @author abhisri1997 /* TicTac Game 
- * __X_|__O_|__X_ 
- * __O_|__X_|__O_ 
+/*
+ * @author abhisri1997
+ *  TicTac Game
+ * __X_|__O_|__X_
+ * __O_|__X_|__O_
  *   X | O | X
  */
 public class TicTac {
@@ -22,4 +22,3 @@ public class TicTac {
         start.Toss();
     }
 }
-
